@@ -24,9 +24,9 @@ pip install -r requirements.txt
 
 ### 3. Set Up Environment Variables
 Create a .env file in the root directory and add your OpenAI API key:
-```bash
+**`
 OPENAI_API_KEY=your_openai_api_key_here
-```
+`**
 
 ### 4. Obtain Gmail API Credentials
 You will need to create a Google Cloud project and obtain a credentials.json file to access the Gmail API. Follow these steps:
@@ -53,10 +53,10 @@ Follow the prompts to authenticate your Gmail API and interact with your emails 
 ### 6. User-Specific Files
 The following files are generated dynamically when the program runs. These files are related to user-specific data and should not be included in the GitHub repository:
 
-- token.json: Stores OAuth tokens for Gmail API authentication. This file is generated when you first authenticate with the Gmail API and is needed for subsequent API access without re-authentication.
-- index_email_metadata.db: A database file storing metadata related to retrieved emails for fast access.
-- index_email.index: Stores the Faiss index for email retrieval using similarity search.
-- last_checked.txt: Records the timestamp of the last email retrieval, which helps in incremental fetching of new emails.
+- **`token.json`**: Stores OAuth tokens for Gmail API authentication. This file is generated when you first authenticate with the Gmail API and is needed for subsequent API access without re-authentication.
+- **`index_email_metadata.db`**: A database file storing metadata related to retrieved emails for fast access.
+- **`index_email.index`**: Stores the Faiss index for email retrieval using similarity search.
+- **`last_checked.txt`**: Records the timestamp of the last email retrieval, which helps in incremental fetching of new emails.
 These files are essential for the program to function correctly but will be generated when the application is executed for the first time.
 
 ### 7. License
